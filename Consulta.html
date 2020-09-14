@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consulta</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul class="nav nav-pills">
+			  <li class="nav-item">
+			    <a class="nav-link" data-toggle="pill" href="index.html">Principal</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" data-toggle="pill" href="Registrar.html">Registrar</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link active" data-toggle="pill" href="">Consultar</a>
+			  </li>
+		</ul>
+		<div class="text-center">
+			<h1>Pulsaciones</h1>
+			<input type="button" value="Cargar datos" class="btn btn-success" onclick="OnInit()">
+			<p id="result"></p>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Edad</th>
+						<th>Género</th>
+						<th>Pulsaciones</th>
+					</tr>
+				</thead>
+				<tbody id="tablaPulsaciones"></tbody>
+			</table>
+			<input type="button" class="btn btn-danger" value="Vaciar Lista" onclick="Vaciar()">
+		</div>
+	</div>
+</body>
+</html>

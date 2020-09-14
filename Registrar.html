@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de persona</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/Registrar.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul class="nav nav-pills">
+			  <li class="nav-item">
+			    <a class="nav-link" data-toggle="pill" href="index.html">Principal</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link active" data-toggle="pill" href="">Registrar</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" data-toggle="pill" href="Consulta.html">Consultar</a>
+			  </li>
+		</ul>
+		<h1 class="text-center">Registrar persona</h1>
+		<form id="formPulsaciones">
+			<div class="form-group">
+				<label for="nombre">Nombre</label>
+				<input type="text" class="form-control" id="nombre" aria-describedby="Nombre">
+			</div>
+			<div class="form-group">
+				<label for="edad">Edad</label>
+				<input type="number" min="1" max="120" class="form-control" id="edad" aria-describedby="Edad">
+			</div>
+			<div class="form-group">
+				<label for="genero">Género</label>
+				<select id="genero">
+					<option value="Masculino">Masculino</option>
+					<option value="Femenino">Femenino</option>
+				</select>
+			</div>
+			<h1 id="valorPulsacion">Pulsaciones : 0</h1>
+			<input type="button" value="Calcular pulsaciones" class="btn btn-secondary" onclick="MostrarPulsaciones()" />
+			<input type="button" value="Registrar" class="btn btn-success" onclick="Guardar()" />
+		</form>
+	</div>
+</body>
+</html>
